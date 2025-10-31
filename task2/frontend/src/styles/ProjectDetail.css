@@ -1,0 +1,169 @@
+.project-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-detail-header {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: #2980b9;
+}
+
+.project-info h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.project-info .project-description {
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.project-stats {
+  display: flex;
+  gap: 2rem;
+  color: #95a5a6;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.add-task-button,
+.schedule-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-task-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.add-task-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.schedule-button {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.schedule-button:hover {
+  background-color: #8e44ad;
+  transform: translateY(-2px);
+}
+
+.tasks-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #95a5a6;
+}
+
+.schedule-modal {
+  max-width: 600px;
+}
+
+.schedule-content {
+  margin: 1.5rem 0;
+}
+
+.schedule-content h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.schedule-list {
+  background-color: #f8f9fa;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-list li {
+  padding: 0.5rem 0;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.warnings-list {
+  list-style: none;
+  padding: 0;
+}
+
+.warnings-list li {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  color: #856404;
+}
+
+.warnings-list strong {
+  color: #664d03;
+}
+
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 1rem;
+  }
+
+  .project-detail-header,
+  .tasks-section {
+    padding: 1.5rem;
+  }
+
+  .header-actions {
+    flex-direction: column;
+  }
+
+  .project-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

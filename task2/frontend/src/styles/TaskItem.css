@@ -1,0 +1,126 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  transition: all 0.3s;
+}
+
+.task-item:hover {
+  background-color: #e9ecef;
+  transform: translateX(4px);
+}
+
+.task-item.completed {
+  border-left-color: #2ecc71;
+  opacity: 0.7;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.task-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.task-title {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+.task-due-date,
+.task-hours,
+.task-dependencies {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.task-dependencies {
+  font-style: italic;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.task-edit {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.task-edit-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.save-button,
+.cancel-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.2s;
+}
+
+.save-button {
+  color: #2ecc71;
+}
+
+.cancel-button {
+  color: #e74c3c;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    flex-wrap: wrap;
+  }
+
+  .task-content {
+    width: 100%;
+  }
+}
