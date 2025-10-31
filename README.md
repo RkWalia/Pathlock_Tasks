@@ -24,62 +24,61 @@ A simple full-stack app demonstrating CRUD operations and frontend-backend commu
   - Basic design using TailwindCSS or Bootstrap
   - Save tasks in `localStorage`
 ---
+# 🚀 Mini Project Manager – Pathlock Assignment (October 2025)
 
-##🚀 Home Assignment 2 – Mini Project Manager
-###🎯 Objective
-A more advanced project management system featuring authentication, project-task relationships, and modular design.
+This project is part of the **Pathlock Home Coding Assignment (October 2025)**.  
+It demonstrates a full-stack implementation using **C# (.NET 8)** for the backend and **React with TypeScript** for the frontend.
 
-###🛠️ Core Features
-🔐 Authentication
-User registration and login with JWT
+---
 
-Each user can access only their data
+## 🎯 Objective
 
-📦 Projects
-Create and delete projects
+Build a **Mini Project Management System** that includes user authentication, project and task management, and modular architecture following full-stack best practices.
 
-Each project has:
+---
 
-Title (3–100 chars)
+## 💼 Business Context
 
-Description (optional, ≤500 chars)
+The application allows users to:
+- Register and log in securely.  
+- Create and manage multiple projects.  
+- Add, update, and delete tasks within projects.  
+- Mark tasks as complete/incomplete.  
+- Access only their own data using JWT-based authentication.
 
-Creation date (auto-set)
+---
 
-###✅ Tasks
-Add, update, and delete tasks
+## 🧩 Core Features
 
-Toggle completion
+### 🔐 Authentication
+- User registration and login using **JWT (JSON Web Tokens)**.  
+- Authenticated users can access only their data.  
 
-Associate tasks with projects
+### 🗂 Projects
+- Each user can create multiple projects.  
+- Project properties:
+  - **Title** (required, 3–100 characters)  
+  - **Description** (optional, up to 500 characters)  
+  - **Creation Date** (auto-generated)
 
-Optional due date
+### ✅ Tasks
+- Each project can have multiple tasks.  
+- Task properties:
+  - **Title** (required)  
+  - **Due Date** (optional)  
+  - **Completion Status**  
+  - **Project Reference**
 
-💻 Frontend
-Pages:
+---
 
-Login / Register
+## ⚙️ Backend (C# .NET 8)
 
-Dashboard (list of projects)
-
-Project Details (task list)
-
-Uses:
-
-React Router for navigation
-
-Axios for API calls
-
-Form validation & error handling
-
-JWT storage & reuse
-
-Loading indicators and user feedback
-
-###⚙️ Tech Stack
-Backend: .NET 8 Core, Entity Framework Core, JWT Authentication
-
-Frontend: React + TypeScript + React Router
+### 🏗️ Requirements
+- Build a **RESTful API** using **.NET 8 Core** and **Entity Framework Core**.  
+- Implement **JWT authentication**.  
+- Use **in-memory** or **SQLite** database.  
+- Apply **DataAnnotations** for input validation.  
+- Follow **Separation of Concerns** (Models, DTOs, Services, Controllers).
 
 Database: In-memory or SQLite
 
